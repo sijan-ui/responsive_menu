@@ -1,0 +1,88 @@
+/* common selector  */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* font  */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100&display=swap');
+:root {
+    /* backgroun color */
+    --primary-color: #4458dc;
+    --secondary-color: #854fee;
+    --bg-white: #fff;
+    --bg-light: #faf8ff;
+    --bg-black: #000;
+    --bg-gray: #eee;
+    --gradient: linear-gradient(to right, #4485dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+    /* text color  */
+    --primary-text: #4458dc;
+    --secondary-text: #854fee;
+    --text-white: #fff;
+    --text-black: #000;
+    --text-gray: #777;
+    /* font family  */
+    --primary-font: 'Rubik', sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
+}
+body{
+    font-family: var(--secondary-font);
+    width: 100%;
+    background: url('../image/body-bg.png.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/* custom css  */
+::-webkit-scrollbar{
+    width: 0.25rem;
+}
+::-webkit-scrollbar-track{
+    background: var(--bg-gray);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--primary-color);
+}
+
+/* nav part start  */
+.header_wrapper .navbar{
+    transition: all .2 linear;
+    background-color: var(--bg-white);
+    --webkit-transition: all .2 linear;
+    --o-transition: all .2 linear;
+}
+.header_wrapper .navbar-brand img{
+    max-width: 500px;
+    height: 100px;
+}
+.header_wrapper .navbar-toggler:focus{
+    box-shadow: none;
+}
+.header_wrapper .nav-item{
+    margin: 0 0.625rem;
+}
+.header_wrapper .nav-item .nav-link{
+    font-family: var(--primary-font);
+    font-size: 0.9375;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--text-black);
+}
+.header_wrapper .nav-item .nav-link.active,
+.header_wrapper .nav-item .nav-link:hover{
+    color: var(--primary-text);
+}
+.header-scrolled{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--bg-white);
+    box-shadow: 0 0.25 0.375 rgba(12, 0, 46, 0.5);
+}
+/* nav close  */

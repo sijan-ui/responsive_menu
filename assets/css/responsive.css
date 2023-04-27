@@ -1,0 +1,34 @@
+@media (max-width: 1199.5px){
+    /* coustom css  */
+    
+}
+@media (max-width: 991px){
+    /* navbar */
+    .header-scrolled{
+        height: auto;
+    }
+    .header_wrapper .navbar-collapse{
+        margin-top: -0.125rem;
+    }
+    .header_wrapper .menu-navbar-nav{
+        text-align: center;
+        background-color: var(--bg-white);
+        padding-bottom: 0.9375rem;
+    }
+    .header_wrapper .nav-item .nav-link{
+        margin-top: 0.9375rem;
+    }
+}
+@media (max-width: 767px){
+    /* custom css */
+    
+
+}
+@media (max-width: 575.5px){
+    
+
+}
+@media (max-width: 390px){
+    
+
+}
